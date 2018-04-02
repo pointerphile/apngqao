@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		45EFD4BF20714B7600CDC205 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45EFD4BE20714B7600CDC205 /* main.cpp */; };
+		45EFD4C620714D9C00CDC205 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EFD4C520714D9C00CDC205 /* libboost_system.dylib */; };
+		45EFD4C9207214A800CDC205 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45EFD4C7207214A800CDC205 /* core.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		45EFD4BB20714B7600CDC205 /* apngqao */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apngqao; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EFD4BE20714B7600CDC205 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		45EFD4C520714D9C00CDC205 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../../usr/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
+		45EFD4C7207214A800CDC205 /* core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = core.cpp; sourceTree = "<group>"; };
+		45EFD4C8207214A800CDC205 /* core.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = core.hpp; sourceTree = "<group>"; };
+		45EFD4CA2072160D00CDC205 /* headers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = headers.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EFD4C620714D9C00CDC205 /* libboost_system.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +48,7 @@
 		45EFD4B220714B7600CDC205 = {
 			isa = PBXGroup;
 			children = (
+				45EFD4C520714D9C00CDC205 /* libboost_system.dylib */,
 				45EFD4BD20714B7600CDC205 /* apngqao */,
 				45EFD4BC20714B7600CDC205 /* Products */,
 			);
@@ -58,6 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				45EFD4BE20714B7600CDC205 /* main.cpp */,
+				45EFD4C7207214A800CDC205 /* core.cpp */,
+				45EFD4C8207214A800CDC205 /* core.hpp */,
+				45EFD4CA2072160D00CDC205 /* headers.hpp */,
 			);
 			path = apngqao;
 			sourceTree = "<group>";
@@ -118,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EFD4C9207214A800CDC205 /* core.cpp in Sources */,
 				45EFD4BF20714B7600CDC205 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +250,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -246,6 +260,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
