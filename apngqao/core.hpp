@@ -12,7 +12,8 @@
 #include "headers.hpp"
 class core {
 private:
-	
+	boost::filesystem::path strTempName;
+	boost::filesystem::path strTempDirName;
 public:
 	void setTempName();
 	void setTempDirName();

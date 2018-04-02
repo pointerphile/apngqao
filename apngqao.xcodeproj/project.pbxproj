@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453DB00B20721C0100CF7C00 /* initializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453DB00920721C0100CF7C00 /* initializer.cpp */; };
 		45EFD4BF20714B7600CDC205 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45EFD4BE20714B7600CDC205 /* main.cpp */; };
 		45EFD4C620714D9C00CDC205 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EFD4C520714D9C00CDC205 /* libboost_system.dylib */; };
 		45EFD4C9207214A800CDC205 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45EFD4C7207214A800CDC205 /* core.cpp */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		453DB00920721C0100CF7C00 /* initializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = initializer.cpp; sourceTree = "<group>"; };
+		453DB00A20721C0100CF7C00 /* initializer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = initializer.hpp; sourceTree = "<group>"; };
 		45EFD4BB20714B7600CDC205 /* apngqao */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apngqao; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EFD4BE20714B7600CDC205 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		45EFD4C520714D9C00CDC205 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../../usr/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
@@ -65,6 +68,8 @@
 		45EFD4BD20714B7600CDC205 /* apngqao */ = {
 			isa = PBXGroup;
 			children = (
+				453DB00920721C0100CF7C00 /* initializer.cpp */,
+				453DB00A20721C0100CF7C00 /* initializer.hpp */,
 				45EFD4BE20714B7600CDC205 /* main.cpp */,
 				45EFD4C7207214A800CDC205 /* core.cpp */,
 				45EFD4C8207214A800CDC205 /* core.hpp */,
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453DB00B20721C0100CF7C00 /* initializer.cpp in Sources */,
 				45EFD4C9207214A800CDC205 /* core.cpp in Sources */,
 				45EFD4BF20714B7600CDC205 /* main.cpp in Sources */,
 			);
