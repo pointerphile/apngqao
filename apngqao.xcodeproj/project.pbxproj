@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		453DB00B20721C0100CF7C00 /* initializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453DB00920721C0100CF7C00 /* initializer.cpp */; };
+		455BD9F92077E19A003C16F8 /* libboost_filesystem-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 455BD9F82077E19A003C16F8 /* libboost_filesystem-mt.dylib */; };
 		45EFD4BF20714B7600CDC205 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45EFD4BE20714B7600CDC205 /* main.cpp */; };
 		45EFD4C620714D9C00CDC205 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EFD4C520714D9C00CDC205 /* libboost_system.dylib */; };
 		45EFD4C9207214A800CDC205 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45EFD4C7207214A800CDC205 /* core.cpp */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		453DB00920721C0100CF7C00 /* initializer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = initializer.cpp; sourceTree = "<group>"; };
 		453DB00A20721C0100CF7C00 /* initializer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = initializer.hpp; sourceTree = "<group>"; };
+		453DB00C2072727100CF7C00 /* coreVariables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coreVariables.h; sourceTree = "<group>"; };
+		455BD9F82077E19A003C16F8 /* libboost_filesystem-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_filesystem-mt.dylib"; path = "../../../../../../usr/local/lib/libboost_filesystem-mt.dylib"; sourceTree = "<group>"; };
 		45EFD4BB20714B7600CDC205 /* apngqao */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apngqao; sourceTree = BUILT_PRODUCTS_DIR; };
 		45EFD4BE20714B7600CDC205 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		45EFD4C520714D9C00CDC205 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../../usr/local/lib/libboost_system.dylib; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				455BD9F92077E19A003C16F8 /* libboost_filesystem-mt.dylib in Frameworks */,
 				45EFD4C620714D9C00CDC205 /* libboost_system.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				45EFD4C520714D9C00CDC205 /* libboost_system.dylib */,
+				455BD9F82077E19A003C16F8 /* libboost_filesystem-mt.dylib */,
 				45EFD4BD20714B7600CDC205 /* apngqao */,
 				45EFD4BC20714B7600CDC205 /* Products */,
 			);
@@ -74,6 +79,7 @@
 				45EFD4C7207214A800CDC205 /* core.cpp */,
 				45EFD4C8207214A800CDC205 /* core.hpp */,
 				45EFD4CA2072160D00CDC205 /* headers.hpp */,
+				453DB00C2072727100CF7C00 /* coreVariables.h */,
 			);
 			path = apngqao;
 			sourceTree = "<group>";
@@ -146,7 +152,6 @@
 		45EFD4C020714B7600CDC205 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -204,7 +209,6 @@
 		45EFD4C120714B7600CDC205 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

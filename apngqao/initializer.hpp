@@ -12,13 +12,20 @@
 #include "headers.hpp"
 class initializer{
 private:
+	coreVariables& CoreData;
 public:
-	void checkInputIsInteger();
+	initializer(const char* argv[], coreVariables& CoreDataStruct);
+	void setLogicalCoreNumber();
+	int integerInputReceiver();
 	void setInitialQuality();
 	void setFrameDelay();
-	void setSelfPath();
+	void setPath_Myself(const char* argv[]);
+	void setPath_SourceDir(const char* argv[]);
 	void setPath_pngquant();
 	void setPath_apngasm();
 	void setPath_apngopt();
-}
+	void setPath_TempRootDir();
+	void renameSourceFiles();
+	void clearTempRootDir();
+};
 #endif /* initializer_hpp */

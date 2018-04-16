@@ -12,15 +12,24 @@
 #include "headers.hpp"
 class core {
 private:
-	boost::filesystem::path strTempName;
-	boost::filesystem::path strTempDirName;
+	boost::filesystem::path m_pathTempName;
+	boost::filesystem::path m_pathTempDir;
+	boost::filesystem::path m_pathTempAPNG;
+	unsigned short m_usQuality;
+	coreVariables& CoreData;
 public:
+	core(coreVariables& CoreDataStruct, unsigned short usQuality);
 	void setTempName();
-	void setTempDirName();
+	void setPath_tempDir();
+	void setPath_tempAPNG();
+	void makeTempDir();
 	void runApp_pngquant();
-	void runApp_pngadm();
-	void runApp_pngopt();
+	void runApp_apngasm();
+	void runApp_apngopt();
+	void recordResult();
+	unsigned long getAPNGSize();
 	void release();
 	void cleanTemp();
+	void run();
 };
 #endif /* core_hpp */
